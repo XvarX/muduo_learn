@@ -1,0 +1,4 @@
+开始用muduo库了，得意于前几天学习编译和链接以及cmake，知道怎么去使用这种开源库了
+g++ ./main.cpp -I../../ -L../../../build/release-cpp11/lib -lmuduo_net -lmuduo_base -lpthread
+
+这里需要注意的就是这种链接库如果不是cmake的话，需要一级一级的库链接好，比如这里就是muduo_net 依赖 muduo_base 依赖 pthread都要写

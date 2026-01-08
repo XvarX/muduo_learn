@@ -1,0 +1,67 @@
+# 只保留代码文件，忽略可执行文件、链接库、目标文件和构建目录
+# 忽略所有
+*
+
+# 但保留目录（以便能匹配到子文件）
+!*/
+
+# 保留常见源代码和构建脚本
+!*.c
+!*.cc
+!*.cpp
+!*.cxx
+!*.h
+!*.hh
+!*.hpp
+!*.hxx
+!*.S
+!*.s
+!*.asm
+!*.py
+!*.java
+!*.rs
+!*.go
+!*.ts
+!*.tsx
+!*.js
+!*.jsx
+!*.cs
+!*.php
+!*.html
+!*.css
+!*.md
+!Makefile
+!CMakeLists.txt
+
+# 忽略常见编译产物和库（冗余，但清晰）
+*.o
+*.obj
+*.lo
+*.a
+*.lib
+*.so
+*.so.*
+*.dll
+*.dylib
+*.exe
+*.out
+*.bin
+*.elf
+
+# 常见构建目录
+/build/
+cmake-build-*/
+bin/
+obj/
+dist/
+release/
+debug/
+
+# CMake 临时文件
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# 保留 .gitignore 和 codenote.txt 文件
+!*.gitignore
+!*codenote.txt
