@@ -30,7 +30,6 @@
 !*.html
 !*.css
 !*.md
-!Makefile
 !CMakeLists.txt
 
 # 忽略常见编译产物和库（冗余，但清晰）
